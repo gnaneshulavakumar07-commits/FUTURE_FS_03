@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fresh Farm - Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="page-title">🛒 Your Cart</h1>
+
+<div class="cart-container">
+
+    <!-- LEFT SIDE - ITEMS -->
+    <div class="cart-items">
+        <div id="cartItems"></div>
+    </div>
+
+    <!-- RIGHT SIDE - SUMMARY -->
+    <div class="cart-summary">
+
+        <h2>Order Summary</h2>
+
+        <p id="subtotal">Subtotal: ₹0</p>
+        <p id="deliveryCharge">Delivery Charge: ₹0</p>
+        <p id="deliveryTime">Estimated Delivery:</p>
+
+        <hr>
+
+        <div class="coupon-box">
+            <input type="text" id="coupon" placeholder="Enter Coupon">
+            <button onclick="applyCoupon()">Apply</button>
+        </div>
+
+        <p id="couponMsg" class="coupon-msg"></p>
+
+        <h3 id="total">Final Total: ₹0</h3>
+
+        <button class="checkout-btn" onclick="payNow()">Proceed to Pay</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
